@@ -1,0 +1,43 @@
+
+        /* التكيف مع الشاشات الصغيرة */
+        @media (max-width: 992px) {
+            .nav-container {
+                flex-direction: column;
+            }
+            
+            .nav-links {
+                margin-top: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .nav-links li {
+                margin: 5px 10px;
+            }
+            
+            .feature-box {
+                width: 45%;
+            }
+            
+            .news-card, .achievement-card {
+                flex: 0 0 calc(50% - 30px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .feature-box {
+                width: 100%;
+            }
+            
+            .news-card, .achievement-card {
+                flex: 0 0 calc(100% - 30px);
+            }
+            
+            .footer-content > div {
+                flex: 100%;
+            }
+        }

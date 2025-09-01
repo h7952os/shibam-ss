@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>تواصل معنا</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/nav.css">
+ <link rel="stylesheet" href="css/contact.css">
+ <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+  
+    <!-- الشريط العلوي -->
+    <nav class="navbar">
+      <div class="container nav-container">
+          <div class="logo">
+              <img src="logo.png" alt="شعار الجمعية">
+
+              <!-- <h1> ssad </h1> -->
+          </div>
+          
+          <ul class="nav-links">
+
+              <li><a href="index.html" aria-current="page">الرئيسية</a></li>
+              <li><a href="about.html">من نحن</a></li>
+              <li><a href="news.html">الأخبار</a></li>
+              <li><a href="anjz.html">إنجازاتنا</a></li>
+              <li><a href="contact.html">تواصل معنا</a></li>
+              <li><a href="control.html">لوحة التحكم</a></li>
+
+          </ul>
+          
+          <div class="language-switcher">
+              <button onclick="changeLanguage('ar')">العربية</button>
+              <button onclick="changeLanguage('en')">English</button>
+              
+          </div>
+      </div>
+
+  </nav>
+<!-- تواصل معنا -->
+<section class="contact-section">
+  <div class="container">
+      <h2 class="section-title">تواصل معنا</h2>
+
+      <!-- البطاقات الثلاث -->
+      <div class="contact-cards">
+          <div class="contact-card">
+              <i class="fas fa-phone"></i>
+              <h3>رقم التواصل (مشاريع)</h3>
+               <p>424606 5 967+</p>
+          </div>
+
+          <div class="contact-card">
+              <i class="fab fa-whatsapp"></i>
+              <h3>رقم التواصل (أخبار)</h3>
+              <p>+967 770516919</p>
+          </div>
+
+          <div class="contact-card">
+              <i class="fas fa-map-marker-alt"></i>
+              <h3>العنوان</h3>
+              <p> الجمهورية اليمنية - حضرموت - الوادي - شبام <br>مقابل مستشفى شبام العام</p>
+          </div>
+      </div>
+
+      <!-- النموذج والخريطة -->
+      <div class="contact-flex">
+          <!-- النموذج -->
+          <form class="contact-form" action="mailto:info@example.com" method="post" enctype="text/plain">
+              <input type="text" name="name" placeholder="الاسم الكامل *" required>
+              <input type="email" name="email" placeholder="البريد الإلكتروني *" required>
+              <input type="text" name="subject" placeholder="موضوع الرسالة *" required>
+              <textarea name="message" rows="5" placeholder="الرسالة"></textarea>
+              <button type="submit">إرسال</button>
+          </form>
+
+          <!-- الخريطة -->
+          <div class="contact-map">
+              <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115497.41507269341!2d49.0875025!3d14.5401236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x160ccc6d4ba0792f%3A0x1ad24f6d84e8e3ff!2z2YXYrNmF2YjZhCDYp9mE2KjZhdmK2Kkg2YTZhNi52YTYqti12KfZhiDYp9mE2YXYs9iq2YjYp9iqINmE2YTYp9mE2YXYsdmK2Kkg2KfZhNmF2LXYp9mG2YrYqQ!5e0!3m2!1sar!2s!4v1693223513726!5m2!1sar!2s" 
+                  width="100%" 
+                  height="100%" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+          </div>
+      </div>
+  </div>
+</section>
+
+    <!-- الفوتر -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="شعار الجمعية">
+                    <p>جمعية شبام الاجتماعية للتنمية (SSAD) هي جمعية أهلية غير ربحية .</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100085228797901&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/SSAD74097731?t=KEOQYAiG4UIPlPju_SfEgg&s=09"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100085228797901&mibextid=ZbWKwL"><i class="fab fa-instagram"></i></a>
+                        <a href="https://t.me/+K47t3nJ1nqNhODZk"><i class="fab fa-snapchat-ghost"></i></a>
+                        <a href="https://www.instagram.com/invites/contact/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>تواصل معنا</h3>
+                    <div class="contact-info">
+                        <i class="fas fa-phone"></i>
+                        <p>424606 5 967+</p>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-envelope"></i>
+                        <p>Shibam.sad@gmail.com</p>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>اليمن – حضرموت – شبام </p>
+                    </div>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3>النشرة البريدية</h3>
+                    <p>اشترك في نشرتنا البريدية لتصلك آخر أخبار الجمعية وأنشطتها.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Shibam.sad@gmail.com" required>
+                        <button type="submit">اشترك</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>جميع الحقوق محفوظة &copy; جمعية  شبام </p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('.navbar');
+      
+        window.addEventListener('scroll', function () {
+          const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+      
+          if (currentScroll > lastScrollTop) {
+            // نزل المستخدم لتحت → اخفي الناف بار
+            navbar.classList.add('hide-navbar');
+          } else {
+            // طلع المستخدم لفوق → أظهر الناف بار
+            navbar.classList.remove('hide-navbar');
+          }
+      
+          lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // لا تخلي القيمة بالسالب
+        });
+      </script>
+</body>
+</html>

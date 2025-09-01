@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جمعية الخير - لوحة التحكم</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/control.css">
+    
+</head>
+<body>
+    <!-- الشريط العلوي -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHJlY3QgeD0iMTAiIHk9IjEwIiB3aWR0aD0iODAiIGhlaWdodD0iODAiIGZpbGw9IiMyZWNjNzEiIGZpbGwtcnVsZT0iZXZlbm9kZCIgcng9IjEwIiByeT0iMTAiLz48cGF0aCBkPSJNMzAgMzVoNDBtLTIwIDIwaDQwbS0yMCAyMGg0MCIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg==" alt="شعار الجمعية">
+                <h1>جمعية الخير</h1>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="news.html">الأخبار</a></li>
+                <li><a href="anjz.html">إنجازاتنا</a></li>
+                <li><a href="tuasel.html">تواصل معنا</a></li>
+                <li><a href="control.html" aria-current="page">لوحة التحكم</a></li>
+            </ul>
+            
+            <div class="language-switcher">
+                <button onclick="changeLanguage('ar')">العربية</button>
+                <button onclick="changeLanguage('en')">English</button>
+               
+            </div>
+        </div>
+    </nav>
+
+    <!-- قسم لوحة التحكم -->
+    <section class="dashboard">
+        <div class="container">
+            <h2 class="section-title">لوحة تحكم الإدارة</h2>
+            
+            <div class="admin-panel">
+                <div class="admin-sidebar">
+                    <h3>قائمة التحكم</h3>
+                    <ul class="admin-menu">
+                        <li><a href="control.html" ><i class="fas fa-newspaper"></i> إدارة الأخبار</a></li>
+                        <li><a href="controlAnjaz.html" class="active"><i class="fas fa-trophy"></i> إدارة الإنجازات</a></li>
+                        <li><a href="login.html"><i class="fas fa-sign-out-alt"></i> تسجيل الخروج</a></li>
+                    </ul>
+                </div>
+                
+                <div class="admin-content">
+                    
+                    <!-- قسم إضافة الإنجازات -->
+                    <div class="form-section">
+                        <h3>إضافة إنجاز جديد</h3>
+                        <form id="achievementForm">
+                            <div class="form-group">
+                                <label for="achievementTitle">عنوان الإنجاز</label>
+                                <input type="text" id="achievementTitle" class="form-control" placeholder="أدخل عنوان الإنجاز" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="beneficiaries">عدد المستفيدين</label>
+                                <input type="number" id="beneficiaries" class="form-control" placeholder="أدخل عدد المستفيدين" min="1" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="duration">مدة الإنجاز (بالأشهر)</label>
+                                <input type="number" id="duration" class="form-control" placeholder="أدخل مدة الإنجاز بالأشهر" min="1" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="achievementImage">صورة الإنجاز</label>
+                                <div class="file-upload">
+                                    <label class="file-upload-label" for="achievementImageInput">
+                                        <i class="fas fa-cloud-upload-alt"></i> اختر صورة للإنجاز
+                                    </label>
+                                    <input type="file" id="achievementImageInput" class="file-upload-input" accept="image/*">
+                                </div>
+                                <div id="achievementImageName" style="margin-top: 10px; font-size: 0.9rem; color: #777;"></div>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">إضافة الإنجاز</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHJlY3QgeD0iMTAiIHk9IjEwIiB3aWR0aD0iODAiIGhlaWdodD0iODAiIGZpbGw9IiMyZWNjNzEiIGZpbGwtcnVsZT0iZXZlbm9kZCIgcng9IjEwIiByeT0iMTAiLz48cGF0aCBkPSJNMzAgMzVoNDBtLTIwIDIwaDQwbS0yMCAyMGg0MCIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvc3ZnPg==" alt="شعار الجمعية">
+                    <p>جمعية الخير للإغاثة والتنمية هي منظمة غير ربحية تعمل في مجال المساعدات الإنسانية والتنمية المستدامة حول العالم.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>تواصل معنا</h3>
+                    <div class="contact-info">
+                        <i class="fas fa-phone"></i>
+                        <p>+966 12 345 6789</p>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@alkhair.org</p>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>جدة، المملكة العربية السعودية</p>
+                    </div>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3>النشرة البريدية</h3>
+                    <p>اشترك في نشرتنا البريدية لتصلك آخر أخبار الجمعية وأنشطتها.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="أدخل بريدك الإلكتروني" required>
+                        <button type="submit">اشترك</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>جميع الحقوق محفوظة &copy; جمعية الخير 2023</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/control.js"></script>
+
+   
+</body>
+</html>
